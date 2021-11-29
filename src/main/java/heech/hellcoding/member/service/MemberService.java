@@ -1,8 +1,7 @@
-package heech.hellcoding.learn.service;
+package heech.hellcoding.member.service;
 
-import heech.hellcoding.learn.domain.Member;
-import heech.hellcoding.learn.repository.MemberRepository;
-import heech.hellcoding.learn.repository.MemoryMemberRepository;
+import heech.hellcoding.member.domain.Member;
+import heech.hellcoding.member.repository.MemberRepository;
 
 import java.util.List;
 import java.util.Optional;

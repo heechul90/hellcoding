@@ -1,7 +1,7 @@
 package heech.hellcoding.learn.repository;
 
-import heech.hellcoding.learn.domain.Member;
-import org.assertj.core.api.Assertions;
+import heech.hellcoding.member.domain.Member;
+import heech.hellcoding.member.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

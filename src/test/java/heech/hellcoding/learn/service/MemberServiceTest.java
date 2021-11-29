@@ -1,14 +1,11 @@
 package heech.hellcoding.learn.service;
 
-import heech.hellcoding.learn.domain.Member;
-import heech.hellcoding.learn.repository.MemberRepository;
-import heech.hellcoding.learn.repository.MemoryMemberRepository;
-import org.assertj.core.api.Assertions;
+import heech.hellcoding.member.domain.Member;
+import heech.hellcoding.member.repository.MemoryMemberRepository;
+import heech.hellcoding.member.service.MemberService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;

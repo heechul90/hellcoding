@@ -1,6 +1,6 @@
-package heech.hellcoding.learn.repository;
+package heech.hellcoding.member.repository;
 
-import heech.hellcoding.learn.domain.Member;
+import heech.hellcoding.member.domain.Member;
 
 import java.util.*;
 

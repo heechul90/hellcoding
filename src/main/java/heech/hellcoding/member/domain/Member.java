@@ -1,4 +1,4 @@
-package heech.hellcoding.learn.domain;
+package heech.hellcoding.member.domain;
 
 public class Member {
 
