@@ -2,10 +2,12 @@ package heech.hellcoding.member.service;
 
 import heech.hellcoding.member.domain.Member;
 import heech.hellcoding.member.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
 
