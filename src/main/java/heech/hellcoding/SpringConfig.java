@@ -1,5 +1,6 @@
 package heech.hellcoding;
 
+import heech.hellcoding.member.aop.TimeTraceAop;
 import heech.hellcoding.member.domain.Member;
 import heech.hellcoding.member.repository.*;
 import heech.hellcoding.member.service.MemberService;
@@ -46,5 +47,10 @@ public class SpringConfig {
         //return new JpaMemberRepository(em);
 
     }*/
+
+    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
+    }
 
 }
