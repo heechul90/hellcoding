@@ -1,4 +1,4 @@
-package heech.hellcoding.mber.domain;
+package heech.hellcoding.mber.admin.domain;
 
 import lombok.Getter;
 import lombok.Setter;
