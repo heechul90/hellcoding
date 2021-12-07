@@ -5,3 +5,16 @@ create table member
     name varchar(255),
     primary key(id)
 );
+
+
+drop table if exists HC_BOARD CASCADE;
+create table HC_BOARD
+(
+    BOARD_ID bigint not null auto_increment,
+    BOARD_NM varchar(255),
+    BOARD_CN varchar(1000),
+    CREATOR varchar(60),
+    CREATED_TIME datetime,
+    UPDATED_TIME datetime,
+    primary key(BOARD_ID)
+);
