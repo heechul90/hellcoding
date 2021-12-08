@@ -7,7 +7,6 @@ import java.util.Date;
 @Table(name = "HC_BOARD")
 public class Board {
 
-
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long boardId;
 
