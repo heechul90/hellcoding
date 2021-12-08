@@ -1,5 +1,6 @@
 package heech.hellcoding.user.service;
 
+import heech.hellcoding.member.service.MemberService;
 import heech.hellcoding.user.domain.User;
 import heech.hellcoding.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -26,21 +27,28 @@ class UserServiceTest {
     @Test
     void getUserList() {
         List<User> result = userService.getUserList();
-        Assertions.assertThat(result.size()).isEqualTo(1000);
+        assertThat(result.size()).isEqualTo(1000);
     }
 
     @Test
     void insertUser() {
-        //given
         User user = new User();
         user.setName("홍길동");
 
-        //when
-        User u = userService.insertUser(user);
+        User resultUser = userService.insertUser(user);
 
-        //then
-        User result = userService.getUser(u.getId()).get();
-        Assertions.assertThat(result.getName()).isEqualTo(user.getName());
+        User result = userService.getUser(resultUser.getId()).get();
+        assertThat(result.getName()).isEqualTo(user.getName());
+    }
+
+    @Test
+    void deleteUser() {
+        User user = new User();
+        user.setName("홍길동");
+
+        User resultUser = userService.insertUser(user);
+        //TODO 삭제 test 작성하기
+
     }
 
 }
