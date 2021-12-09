@@ -31,10 +31,13 @@ public class UserController {
     public ResponseEntity<User> updateUser(@PathVariable(value = "id") Long id, @RequestBody User user) {
         Optional<User> findUser = userService.getUser(id);
         if (!findUser.isPresent()) {
-            throw new IllegalStateException(id + " 은 없는 id 입니다.");
+            throw new IllegalStateException(id + " 는 없는 id 입니다.");
         }
-        //final User updateUser = userService.insertUser(user);
-        return null;
+        User updateUser = new User();
+        updateUser.setId(id);
+        updateUser.setName(user.getName());
+        final User resultUser = userService.insertUser(updateUser);
+        return ResponseEntity.ok(resultUser);
     }
 
     @DeleteMapping("/delete/{id}")
