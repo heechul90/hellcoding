@@ -3,7 +3,6 @@ package heech.hellcoding.user.controller;
 import heech.hellcoding.user.domain.User;
 import heech.hellcoding.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,4 +43,5 @@ public class UserController {
     public void deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
     }
+
 }
