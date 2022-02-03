@@ -18,6 +18,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:'
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	implementation 'org.projectlombok:lombok'
+	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.6.3'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
