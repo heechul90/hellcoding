@@ -1,6 +1,7 @@
-package heech.hellcoding.mber.repository;
+package heech.hellcoding.spring.basic.member.repository;
 
-import heech.hellcoding.mber.entity.Mber;
+import heech.hellcoding.spring.basic.member.entity.Mber;
+import heech.hellcoding.spring.basic.member.repository.MberRepository;
 
 import java.util.HashMap;
 import java.util.Map;

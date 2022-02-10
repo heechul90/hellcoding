@@ -1,4 +1,4 @@
-package heech.hellcoding.mber.entity;
+package heech.hellcoding.spring.basic.member.entity;
 
 public class Mber {
 

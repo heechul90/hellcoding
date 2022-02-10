@@ -1,7 +1,9 @@
 package heech.hellcoding.mber.service;
 
-import heech.hellcoding.mber.entity.Grade;
-import heech.hellcoding.mber.entity.Mber;
+import heech.hellcoding.spring.basic.member.entity.Grade;
+import heech.hellcoding.spring.basic.member.entity.Mber;
+import heech.hellcoding.spring.basic.member.service.MberService;
+import heech.hellcoding.spring.basic.member.service.MberServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;

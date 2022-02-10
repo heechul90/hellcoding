@@ -1,4 +1,4 @@
-package heech.hellcoding.mber.entity;
+package heech.hellcoding.spring.basic.order.entity;
 
 public class Order {
 

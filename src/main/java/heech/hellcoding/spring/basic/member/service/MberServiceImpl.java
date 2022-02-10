@@ -1,8 +1,8 @@
-package heech.hellcoding.mber.service;
+package heech.hellcoding.spring.basic.member.service;
 
-import heech.hellcoding.mber.entity.Mber;
-import heech.hellcoding.mber.repository.MberRepository;
-import heech.hellcoding.mber.repository.MemoryMberRepository;
+import heech.hellcoding.spring.basic.member.entity.Mber;
+import heech.hellcoding.spring.basic.member.repository.MberRepository;
+import heech.hellcoding.spring.basic.member.repository.MemoryMberRepository;
 
 public class MberServiceImpl implements MberService {
 

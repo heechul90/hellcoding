@@ -1,4 +1,4 @@
-package heech.hellcoding.config;
+package heech.hellcoding.spring.basic.member.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;

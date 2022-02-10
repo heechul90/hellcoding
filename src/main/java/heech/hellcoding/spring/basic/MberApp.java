@@ -1,9 +1,9 @@
-package heech.hellcoding.mber;
+package heech.hellcoding.spring.basic;
 
-import heech.hellcoding.mber.entity.Grade;
-import heech.hellcoding.mber.entity.Mber;
-import heech.hellcoding.mber.service.MberService;
-import heech.hellcoding.mber.service.MberServiceImpl;
+import heech.hellcoding.spring.basic.member.entity.Grade;
+import heech.hellcoding.spring.basic.member.entity.Mber;
+import heech.hellcoding.spring.basic.member.service.MberService;
+import heech.hellcoding.spring.basic.member.service.MberServiceImpl;
 
 public class MberApp {
 
