@@ -1,8 +1,8 @@
 package heech.hellcoding.spring.basic.discount.policy;
 
-import heech.hellcoding.spring.basic.member.entity.Mber;
+import heech.hellcoding.spring.basic.member.entity.Member;
 
 public interface DiscountPolicy {
 
-    int discount(Mber mber, int price);
+    int discount(Member mber, int price);
 }
