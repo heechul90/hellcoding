@@ -1,4 +1,4 @@
-package heech.hellcoding.spring.basic.member.config;
+package heech.hellcoding.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
