@@ -11,12 +11,14 @@ import heech.hellcoding.spring.basic.order.service.OrderServiceImpl;
 public class OrderApp {
 
     public static void main(String[] args) {
-        MemberService mberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.merberService();
+        OrderService orderService = appConfig.orderService();
 
         long mberId = 1L;
-        Member mber = new Member(mberId, "mberA", Grade.VIP);
-        mberService.join(mber);
+        Member member = new Member(mberId, "mberA", Grade.VIP);
+        memberService.join(member);
 
         Order order = orderService.createOrder(mberId, "itemA", 10000);
 
