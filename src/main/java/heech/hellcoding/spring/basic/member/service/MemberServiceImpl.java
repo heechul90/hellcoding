@@ -3,11 +3,15 @@ package heech.hellcoding.spring.basic.member.service;
 import heech.hellcoding.spring.basic.member.entity.Member;
 import heech.hellcoding.spring.basic.member.repository.MemberRepository;
 import heech.hellcoding.spring.basic.member.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

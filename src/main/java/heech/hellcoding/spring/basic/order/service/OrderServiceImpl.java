@@ -6,12 +6,16 @@ import heech.hellcoding.spring.basic.member.entity.Member;
 import heech.hellcoding.spring.basic.order.entity.Order;
 import heech.hellcoding.spring.basic.member.repository.MemberRepository;
 import heech.hellcoding.spring.basic.member.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;

@@ -1,10 +1,13 @@
 package heech.hellcoding.spring.basic.member.repository;
 
 import heech.hellcoding.spring.basic.member.entity.Member;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
