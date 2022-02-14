@@ -75,7 +75,7 @@ public class SingletonTest {
     }
 
     @Test
-    @DisplayName("stateful 싱글톤")
+    @DisplayName("stateful 싱글톤은 첫번째 값이 유지되지 않는다.")
     void statefulServiceSingleton() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
 
