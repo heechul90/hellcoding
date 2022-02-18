@@ -11,11 +11,6 @@ public class AllBeanTest {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
     }
 
-    @Test
-    void findAutoAllBean() {
-
-    }
-
 
     static class DiscountService {
 
